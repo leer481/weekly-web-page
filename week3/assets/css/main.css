@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background: #edede8;
+   }
+
+#content {
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+h1 {
+	text-align: center;
+	color: #fb5111;
+	font-family: Degular, sans-serif;
+	padding-right: 25%;
+	padding-left: 25%;
+	padding-bottom: 2%;
+	font-size: 35px;
+}
+
+p {
+	text-align: center;
+	color:#fb5111;
+    font-family: Degular, sans-serif;
+    margin: 2%;
+	font-size: 25px;
+}
+
+
+nav {
+	text-align: left;
+	color: #4241ea;
+    font-family: Degular, sans-serif;
+    margin: 2%;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.week-3 {
+	display:  block;
+	width: 30%;
+	text-align: left;
+	margin-left: auto;
+	margin-top: 5%;
+	margin-right: auto;
+
+}
+
+.faces {
+	display: block;
+	width: 20%;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+
