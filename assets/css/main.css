@@ -1,73 +1,110 @@
 * {
     padding: 0px;
     margin: 0px;
-    background: #edede8;
+    background: #131313;
    }
 
-#content {
-	margin-left: auto;
-    margin-right: auto;
-}
-
-/* .rectangle {
-	height: 100%;
-	color: #4241ea;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-bottom: 2%;
-	border-style: solid;
-	border-width: 2px;
-}
-
-.tab {
-
-} */
-
-h1 {
-    text-align: center;
-    color: #4241ea;
-    font-size: 50px;
-    padding: 2%;
-    font-family: Degular, sans-serif;
-    padding-top: 15%;
-}
-
-h3 {
-	text-align: center;
-	color: #f1414c;
-	font-family: Degular, sans-serif;
-	padding-right: 25%;
-	padding-left: 25%;
+h1, h3{
+  text-transform: lowercase;
+  font-weight: normal;
+  font-family: Helvetica, sans-serif;
+  background-color: #f5f5f5;
 }
 
 p {
-	text-align: center;
-	color: #4241ea;
-    font-family: Degular, sans-serif;
-    margin: 2%;
-	font-size: 18px;
+	font-weight: normal;
+	font-family: Helvetica, sans-serif;
+	background-color: #f5f5f5;
 }
 
-.welcome {
-	color: #4241ea;
-	text-align: center;
-	font-size: 18px;
-    font-family: Degular, sans-serif;	
-    margin-left: 35%;
-	margin-right: 35%;
+.tabs{
+    width: 70%;
+    display: block;
+    margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+    width: 10%;	
+}
+
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+	font-family: Helvetica, sans-serif;
+    text-transform: lowercase;
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #001aff;
 
 }
 
-nav {
-	text-align: left;
-	color: #4241ea;
-    font-family: Degular, sans-serif;
-    margin: 2%;
-	font-size:22px;
-	text-decoration: none;
+.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    background: #f5f5f5;
+    color: #001aff;
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
 }
 
-nav:hover {
-	color: #4ac390;
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #bbff00;
+    color: #333333;
 }
+
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+   
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+  
+.row {
+	display: flex;
+	padding-bottom: 2%;
+	background-color: #f5f5f5;
+
+  }
+
+  .column {
+	flex: 50%;
+	padding-right: 5%;
+	background-color: #f5f5f5;
+
+  }
+
+.link {
+	background-color: #bbff00;
+	color: #001aff;
+}
+
+
+
+
+  /* .content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+  } */
 
